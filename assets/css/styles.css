@@ -1,0 +1,139 @@
+/* Global */
+body {
+    font-family: "Work Sans", Roboto, Helvetica, sans-serif;
+}
+
+/* Bootstrap Overrides */
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    color: var(--white);
+    width: 224px;
+    height: 60px;
+    border-radius: 2px;
+    border: solid 2px var(--aqua);
+    background-color: var(--aqua);
+}
+
+.btn-primary:hover {
+    border: solid 2px var(--steel-grey);
+    background-color: var(--cool-grey);
+}
+
+/*  Landing page  */
+
+.blog-col {
+    height: 491px;
+}
+
+.Rectangle-Copy-3 {
+  height: 487px;
+  object-fit: contain;
+  background: url('../../assets/img/rectangle-copy-3@2x.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  color: var(--white);
+}
+
+.join-now-bg {
+    height: 1124px;
+    border-radius: 2px;
+    background-color: var(--light-grey);
+    object-fit: contain;
+    background: url('../../assets/img/bg.svg');
+}
+
+.How-it-works {
+    padding-top: 30px;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--charcoal-grey);
+}
+
+.join-now-box {
+    margin: 0 auto;
+    width: 900px;
+    height: 828.8px;
+    border-radius: 2px;
+    background-color: var(--white);
+    /* background-color: red; */
+    text-align: center;
+	-webkit-box-shadow: 0 42px 16px -16px #efefef;
+	   -moz-box-shadow: 0 42px 16px -16px #efefef;
+	        box-shadow: 0 42px 16px -16px #efefef;
+
+}
+
+.join-now-box-spacer {
+    height: 700px;
+}
+
+/* Zeplin */
+.Heading-1 {
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: var(--charcoal-grey);
+}
+
+.Heading-2 {
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  color: var(--steel-grey);
+}
+
+.Subheading {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--charcoal-grey);
+}
+
+.Order-List-text {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--charcoal-grey);
+}
+
+.body-text-link {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--aqua);
+}
+
+.body-text {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--steel-grey);
+}
+
