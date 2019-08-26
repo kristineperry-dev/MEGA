@@ -65,12 +65,20 @@ body {
 .blog-col .media {
 	background-color: rgba(51, 61, 68, 0.6);
 	padding:2rem;
+	width:100%;
 }
 .blog-text {
 	font-weight: bold;
 	margin-bottom:0;
 	line-height: normal;
 }
+
+.social-col {color:#fff; padding:4rem;}
+.social-col-facebook { background: var(--blue);}
+.social-col-twitter { background: #43aee4;}
+.social-col-instagram { background: var(--steel-grey);}
+
+.social-col .media { margin-bottom:2rem;}
 
 /* Zeplin */
 .Heading-1 {
