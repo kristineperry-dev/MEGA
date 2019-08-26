@@ -21,9 +21,14 @@ body {
 .btn-primary:hover {
     border: solid 2px var(--green);
     background-color: var(--green);
-	-webkit-box-shadow: 0 32px 16px -16px #efefef;
-	   -moz-box-shadow: 0 32px 16px -16px #efefef;
-	        box-shadow: 0 32px 16px -16px #efefef;
+	-webkit-box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
+	   -moz-box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
+	        box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
+}
+
+.form-control {
+	margin-bottom:22px;
+	border-radius:0;
 }
 
 /*  Landing page  */
@@ -51,7 +56,12 @@ body {
     text-align: center;
     color: var(--charcoal-grey);
 }
-
+.join-now-bg {
+	padding:2rem;
+}
+.join-now-box {
+	padding: 2rem;
+}
 
 .join-now-box-spacer {
     height: 700px;
@@ -71,6 +81,12 @@ body {
 	font-weight: bold;
 	margin-bottom:0;
 	line-height: normal;
+}
+
+.grey-gradient {
+  background-image: linear-gradient(305deg, rgba(98, 113, 121, 0.99), #627179 6%, var(--charcoal-grey));
+	padding:4rem;
+	padding-bottom:6rem;
 }
 
 .social-col {color:#fff; padding:4rem;}
@@ -156,7 +172,6 @@ h2 {
 .join-now-box {
     border-radius: 2px;
     background-color: var(--white);
-    /* background-color: red; */
     margin: 0 auto;
 	padding: 5rem;
 	-webkit-box-shadow: 0 42px 16px -16px #efefef;
@@ -164,6 +179,10 @@ h2 {
 	        box-shadow: 0 42px 16px -16px #efefef;
 
 }
+	.grey-gradient {
+		padding-top:6rem;
+		padding-bottom:8rem;
+	}
 
 }
 
