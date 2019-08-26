@@ -96,6 +96,11 @@ body {
 
 .social-col .media { margin-bottom:2rem;}
 
+.bg-heading {
+	background:url('../../assets/img/bg-heading.svg') center no-repeat;
+}
+.section-cta {padding:4rem;}
+
 /* Zeplin */
 .Heading-1 {
   font-size: 48px;
@@ -159,6 +164,7 @@ h2 {
 }
 
 
+
 /* --- RESPONSIVE  --*/
 @media (min-width: 768px) {
 .join-now-bg {
@@ -184,5 +190,12 @@ h2 {
 		padding-bottom:8rem;
 	}
 
+}
+
+@media (max-width: 768px) {
+	.bg-heading {
+		background-size:contain;
+		background-repeat: space;
+	}
 }
 
