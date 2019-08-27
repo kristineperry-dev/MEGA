@@ -30,7 +30,11 @@ body {
 	margin-bottom:22px;
 	border-radius:0;
 }
-
+.navbar-toggler { border: none; }
+.navbar-toggler-icon, .navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(74,214,221,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* Global Styles */
 
 .location::before {
 	content: url('../img/icon-location.svg');
@@ -43,6 +47,33 @@ body {
 
 .influencer-name {line-height:normal;}
 
+.button-list-nav a, .navbar-collapse.show .nav-link, .navbar-collapse.collapsing .nav-link {
+	margin-bottom: 20px !important;
+	background-image: url('../img/icon-chevron.svg');
+	background-repeat: no-repeat;
+	background-position: 96% center;
+    background-color: var(--aqua);
+    border: 2px solid var(--aqua);
+	border-radius:4px;
+    color: #fff;
+    padding: 20px;
+	font-size: 1.25rem;
+}
+
+.button-list-nav a:hover {
+	background-color: var(--green);
+    border-color: var(--green);
+	color:white;
+	-webkit-box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
+	   -moz-box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
+	        box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
+}
+
+.button-list-nav.dashboard a {
+	color: var(--aqua);
+	background-color:#fff;
+	background-image: url('../img/icon-chevron-aqua.svg');
+}
 
 /*  Landing page  */
 
@@ -180,6 +211,10 @@ h2 {
 
 /* --- RESPONSIVE  --*/
 @media (min-width: 768px) {
+	
+.list-group-col-6 a {
+	width:48%;  
+	}
 .join-now-bg {
     border-radius: 2px;
     background-color: var(--light-grey);
