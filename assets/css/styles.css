@@ -31,6 +31,19 @@ body {
 	border-radius:0;
 }
 
+
+.influencer-location::before {
+	content: url('../img/icon-location.svg');
+	margin-right:5px;
+}
+
+.influencer-location {
+	color: var(--steel-grey);
+}
+
+.influencer-name {line-height:normal;}
+
+
 /*  Landing page  */
 
 
