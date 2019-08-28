@@ -36,6 +36,28 @@ body {
 }
 /* Global Styles */
 
+
+.footer {
+	border-top: 10px solid var(--green);
+	color: var(--steel-grey);
+}
+.footer-blurb {
+	font-size:14px;
+}
+.footer-icon {
+	text-indent: -20px;
+	display: block;
+}
+phone.footer-icon::before {
+	content: url('../img/icon-email.svg');
+	margin-right:10px;
+	
+}
+email.footer-icon::before {
+	content: url('../img/icon-email.svg');
+	margin-right:10px;
+}
+
 .location::before {
 	content: url('../img/icon-location.svg');
 	margin-right:5px;
@@ -48,33 +70,38 @@ body {
 .influencer-name {line-height:normal;}
 
 .button-list-nav a, .navbar-collapse.show .nav-link, .navbar-collapse.collapsing .nav-link {
-	margin-bottom: 20px !important;
+	margin-bottom: 10px !important;
 	background-image: url('../img/icon-chevron.svg');
 	background-repeat: no-repeat;
-	background-position: 96% center;
+	background-position: right 20px center;
     background-color: var(--aqua);
     border: 2px solid var(--aqua);
 	border-radius:4px;
     color: #fff;
-    padding: 20px;
-	font-size: 1.25rem;
+    padding: 15px;
+	padding-right:45px; /* so that the text doesn't go over the chevron */
 }
+/* DASHBOARD USER BUTTON LIST */
+.button-list-nav.button-list-nav-users a {
+	color: inherit;
+	background-color:#fff;
+	background-image: url('../img/icon-chevron-aqua.svg');
+	line-height:normal;
+	padding:20px;
+}
+.media-user-type { font-weight: 600; }
+.media-user-name { font-size:1.25rem; font-weight:300;}
 
+/* GLOBAL BUTTON LIST HOVER */
 .button-list-nav a:hover {
 	background-color: var(--green);
+	background-image: url('../img/icon-chevron.svg');
     border-color: var(--green);
 	color:white;
 	-webkit-box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
 	   -moz-box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
 	        box-shadow: 0 32px 16px -16px rgba(51, 61, 68, 0.15);
 }
-
-.button-list-nav.dashboard a {
-	color: var(--aqua);
-	background-color:#fff;
-	background-image: url('../img/icon-chevron-aqua.svg');
-}
-
 /*  Landing page  */
 
 
@@ -129,8 +156,6 @@ body {
 
 .grey-gradient {
   background-image: linear-gradient(305deg, rgba(98, 113, 121, 0.99), #627179 6%, var(--charcoal-grey));
-	padding:4rem;
-	padding-bottom:6rem;
 }
 
 .social-col {color:#fff; padding:4rem;}
@@ -233,12 +258,7 @@ h2 {
 	        box-shadow: 0 42px 16px -16px #efefef;
 
 }
-	.grey-gradient {
-		padding-top:6rem;
-		padding-bottom:8rem;
-	}
 
-}
 
 
 /* JOB SEARCH */
