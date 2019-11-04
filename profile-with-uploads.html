@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html class="h-100 template"><!-- InstanceBegin template="/Templates/Template-2.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Mega</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.compiled.css">
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body class="d-flex flex-column h-100">
+<!-- InstanceBeginEditable name="header" -->
+<header class="template-1 fixed-top">
+<!-- InstanceEndEditable -->
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#">
+				<img src="assets/img/logo-mega.png" width="auto" height="70" class="d-inline-block align-middle" alt="Megalogo">
+		  	</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  	</button>
+	  	<div class="collapse navbar-collapse" id="navbarNav">
+		  <div class="user-status d-lg-none mb-3 pb-3">
+			  		  
+			  <div class="user-status-logged-out">
+				  
+                <form class="form text-white" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                    <div class="form-group">
+                        <a href="" class="float-right">New user?</a>
+                        <label for="uname1">Username</label>
+                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                        <div class="invalid-feedback">Oops, you missed this one.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control form-control-lg" id="pwd1" required="" autocomplete="new-password">
+                        <div class="invalid-feedback">Enter your password too!</div>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="rememberMe">
+                      <label class="custom-control-label" for="rememberMe">Remember me on this computer</label>
+                    </div>
+                    <div class="form-group pt-4">
+                        <button type="submit" class="btn btn-outline-primary btn-lg btn-block" id="btnLogin">Login</button>
+                    </div>
+                </form>
+			  </div>
+			  
+			  <div class="user-status-logged-in text-center">
+			  
+				  <img src="assets/img/oval-copy%403x.jpg" alt="user" class="rounded-circle img-fluid p-3" width="200" height="200">
+				  <p class="m-0"><a href="#" class="lead user-name text-white">Username (Settings)</a></p>
+				  <p><a href="#" class="sign-out">log out</a></p>
+
+			   </div>
+		  </div>
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Features</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			  </li>
+			</ul>
+			
+				
+		  <div class="user-status d-none d-lg-block ml-3">	
+			<ul class="navbar-nav ml-auto">		  
+			  <li class="user-status-logged-out nav-item">
+					<a href="#loginModal" role="button" class="btn btn-outline-primary" data-toggle="modal">Login</a>
+			  </li>
+			  
+			  <li class="user-status-logged-in nav-item dropdown">
+				<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  <img src="assets/img/oval-copy%403x.jpg" alt="user" width="40" height="40" class="rounded-circle">
+				</a>
+					<div class="user-options dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#">Username (Settings)</a>
+					  <a class="dropdown-item" href="#">logout</a>
+					</div>
+			  </li>
+			</ul>
+		  </div>
+ 		</div>
+		</nav>	
+	</div>
+</header>
+<main role="main" class="flex-shrink-0">
+
+<!-- InstanceBeginEditable name="Hero" -->
+<!-- HERO   -->	
+	<div class="jumbotron hero mb-5">
+	  <div class="overlay col-md-12 d-flex justify-content-center change-cover-photo">
+		  <div class="align-self-center d-none change-cover-photo-show">
+		  <a href="#modalUpload" role="button" data-toggle="modal" class="btn btn-outline-primary">change cover photo</a>
+		  </div>
+		
+	  </div>		
+	  <div class="overlay col-md-4 d-flex justify-content-center pt-5">
+		<div class="profile-influencer align-self-center text-center">
+        	<a href="#modalUpload" data-toggle="modal"><img src="assets/img/oval-copy@3x.jpg" alt="Influencer" class="rounded-circle img-fluid p-3" width="200" height="200"></a>
+			<p class="lead text-white influencer-name">Influencer Username</p>
+			
+			<div class="btn-toolbar" role="toolbar" aria-label="Influencer Social Media Options">
+			  <div class="btn-group" role="group" aria-label="Influencer Social Media">
+				  <a class="btn"  href="#influencer-fb" role="button">
+					<img src="assets/img/icon-facebook.svg" alt="Facebook" class="btn-icon" width="30" height="30">
+				  </a>
+				  <a class="btn" href="#influencer-twitter">
+					<img src="assets/img/icon-twitter.svg" alt="Twitter" class="btn-icon" width="30" height="30">
+				  </a>
+				  <a class="btn" href="#influencer-instagram">
+					<img src="assets/img/icon-instagram.svg" alt="Twitter" class="btn-icon" width="30" height="30">
+				  </a>
+				  <a class="btn" href="#influencer-youtube">
+					<img src="assets/img/icon-youtube.svg" alt="Twitter" class="btn-icon" width="30" height="30">
+				  </a>
+				</div>
+			</div>
+			
+			<p class="influencer-website my-1"><a href="#" class="text-white">www.website.com</a></p>
+			
+		</div>
+	  </div>
+    </div>
+<!-- END HERO   -->		
+<!-- InstanceEndEditable -->	
+	
+<!-- InstanceBeginEditable name="Content" -->
+<!-- VIEW CONTENT  -->
+	<div class="container-fluid">
+	<div class="row no-gutters">
+        <div class="col-lg-8 order-2 order-md-1">
+		
+			<div class="profile-intro ml-auto col-xl-9 pb-5">
+			
+			
+				<h2 class="Heading-1 pb-5">About</h2>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+				
+			</div>
+			
+			<div class="profile-gallery col-12 my-4 p-0 bg-light">
+				
+				 <div class="row gallery">
+
+					<div class="row no-gutters">
+
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/bridge.jpg" alt="Bridge">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/park.jpg" alt="Park">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/tunnel.jpg" alt="Tunnel">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/traffic.jpg" alt="Traffic">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/coast.jpg" alt="Coast">
+							</a>
+						</div> 
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/rails.jpg" alt="Rails">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/park.jpg" alt="Park">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/tunnel.jpg" alt="Tunnel">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/traffic.jpg" alt="Traffic">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/coast.jpg" alt="Coast">
+							</a>
+						</div> 
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/park.jpg" alt="Park">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/bridge.jpg" alt="Bridge">
+							</a>
+						</div>
+
+					</div>
+				</div>	
+				
+			</div>
+			
+			<div class="advertisement text-center">
+				  <img src="assets/img/" height="728" width="90" alt="Advertisement 728 x 90" class="bg-light img-fluid" style="display:inline-block;width:728px;height:90px;">
+			</div>
+			
+			<div class="profile-content ml-auto col-xl-9 py-5">
+			
+				<h2 class="Heading-2 pb-5">Specialties / Interests</h2>
+
+				<div class="profile-list">
+					<ul class="list-col-3">
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+						<li>Lorem ipsum</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="profile-chat col-12 m-0 p-0 bg-light bg-chat">
+				<div class="profile-intro p-5 m-5 ml-auto col-lg-10">
+					<div class="col-md-4 text-center">
+						<img src="assets/img/oval-copy@3x.jpg" alt="influencer-name" width="120" height="120" class="rounded-circle align-self-center mb-3 img-fluid">
+						<p><button class="btn btn-primary btn-lg icon-chat">Chat now</button></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+<!-- SIDE BAR -->	
+        <div class="col-lg-4 sidebar order-1 order-md-2">
+			<div class="sidebar-profile-content mx-xl-5 px-5 pb-5">	
+					<input type="search" class="form-control ds-input form-control-lg form-inline" id="search-input" placeholder="Search" aria-label="Search for..." role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
+					
+				
+				<div class="custom-file mb-5 form-group" id="uploadResume">
+					  <input type="file" class="custom-file-input" id="resumeFile">
+					  <label class="custom-file-label btn-upload-text" for="resumeFile">Upload your resume</label>
+					
+					<div class="form-group">	 
+					 <label class="mb-1"><span class="btn-outline-danger mr-2 lead">&times;</span>FileName...Uploaded.pdf  </label>
+					</div>
+				</div>	
+				
+					<button class="btn btn-primary icon-download btn-block">Download Resume</button>
+					<button class="btn btn-primary icon-chat btn-block">Chat now</button>
+					<button class="btn btn-lg btn-outline-primary mt-3" href="#modalFlag" data-toggle="modal" >Flag User</button>
+			</div>	
+			<div class="profile-card bg-dark text-white p-5">
+				
+				  <div class="media">
+						<img src="assets/img/oval-copy@3x.jpg" alt="influencer-name" width="100" height="100" class="rounded-circle align-self-center mr-3">
+					<div class="media-body align-self-center">
+						<h4 class="influencer-name lead mb-0">Influencer's Name</h4>
+						<p class="influencer-location mb-0 location">Location of Influencer</p>
+					</div>
+				  </div>
+				
+				<div class="profile-card-stats mt-4">
+					<h5 class="py-2">Profile Card Stats</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+					</p>
+				</div>
+				<div class="profile-card-stats mt-4">
+					<h5 class="py-2">Profile Card Stats</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+					</p>
+					
+				</div>
+				<div class="profile-card-stars mt-4 mb-4">
+					<img src="assets/img/icon-star.svg">
+					<img src="assets/img/icon-star.svg">
+					<img src="assets/img/icon-star.svg">
+					<img src="assets/img/icon-star.svg">
+				
+				</div>
+				
+			</div>
+			<div class="advertisement my-5 text-center">
+				  <img src="assets/img/" width="336" height="280" alt="Advertisement 336 x 280" class="bg-light img-fluid my-2" style="display:inline-block;width:336px;height:280px;">
+				
+				  <img src="assets/img/" width="300" height="250" alt="Advertisement 300 x 250" class="bg-light img-fluid my-2" style="display:inline-block;width:300px;height:250px;">
+				
+				  <img src="assets/img/" width="468" height="60" alt="Advertisement 468 x 60" class="bg-light img-fluid my-2" style="display:inline-block;width:468px;height:60px;">
+			</div>
+			
+		</div> 
+	</div>
+</div>
+	
+
+	
+<!-- END VIEW CONTENT -->	
+<!-- InstanceEndEditable -->	
+</main>
+<footer class="footer mt-auto p-3 bg-dark">
+	<div class="container pb-5">
+		
+		<div class="row">
+		  	<div class="col-12 pb-3">
+				<a class="navbar-brand" href="#">
+					<img src="assets/img/logo-mega.png" width="auto" height="60" class="d-inline-block align-middle" alt="Megalogo">
+				</a>
+		    </div>
+			<div class="footer-contact col-xs-12 col-md-4">
+			
+				<address class="location footer-icon pb-3">
+					Address Address 1 <br>
+					Address 2<br>
+					Las Vegas, NV 89000
+				</address>
+				<phone class="footer-icon">Phone 1 (702) 123-1234</phone>
+				<email class="footer-icon">Email  name@name.com</email>
+			</div>
+			<div class="footer-blurb col-xs-12 col-md-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                    <div class="form-group">
+                        <a href="" class="float-right">New user?</a>
+                        <label for="uname1">Username</label>
+                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                        <div class="invalid-feedback">Oops, you missed this one.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control form-control-lg" id="pwd1" required="" autocomplete="new-password">
+                        <div class="invalid-feedback">Enter your password too!</div>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="rememberMe">
+                      <label class="custom-control-label" for="rememberMe">Remember me on this computer</label>
+                    </div>
+                    <div class="form-group pt-4">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-lg float-right" id="btnLogin">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END LOGIN MODAL -->
+	
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+<!-- InstanceEnd -->
+<div id="modalFlag"  class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>Flag a user</h3>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p class="lead">Do you find this content inappropriate?</p>
+				<p>Let us know why.</p>
+				<form>
+				  <div class="form-group">
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						  <label class="form-check-label" for="inlineCheckbox1">Violence</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+						  <label class="form-check-label" for="inlineCheckbox2">Sexually explicit</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+						  <label class="form-check-label" for="inlineCheckbox3">Other</label>
+						</div>
+					</div>
+					<div class="form-group">
+					<label for="exampleFormControlTextarea1">Tell us more (optional):</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  	</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-primary">Flag</button>
+			  </div>
+	 	</div>
+ </div>
+</div>
+				
+<div id="modalUpload"  class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+        
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				  <li class="nav-item">
+					<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-upload" role="tab" aria-controls="pills-home" aria-selected="true">Upload your picture</a>
+				  </li>
+					
+				  <li class="nav-item">
+					<a class="nav-link" id="pills-social-instagram-tab" data-toggle="pill" href="#pills-social-error" role="tab" aria-controls="pills-social" aria-selected="false"><img src="assets/img/icon-instagram.svg" alt="Instagram" class="btn-icon" width="25" height="25"></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" id="pills-social-fb-tab" data-toggle="pill" href="#pills-social" role="tab" aria-controls="pills-social" aria-selected="false"><img src="assets/img/icon-facebook.svg" alt="Facebook" class="btn-icon" width="25" height="25"></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" id="pills-socialUnlink-tab" data-toggle="pill" href="#pills-social" role="tab" aria-controls="pills-social" aria-selected="false"><img src="assets/img/icon-twitter.svg" alt="Twitter" class="btn-icon" width="25" height="25"></a>
+				  </li>
+				</ul>
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+     	 </div>
+     	 <div class="modal-body">
+			 
+			 <div class="tab-content" id="pills-tabContent">
+			  <div class="tab-pane fade show active" id="pills-upload" role="tabpanel" aria-labelledby="pills-upload-tab">
+				  
+					  
+					   <form>
+						  <div class="form-group files">
+							<input type="file" class="form-control uploadDragDrop bg-light rounded" multiple="">
+						  </div>
+   					  </form>
+					  
+					  <p> Or you may choose one from your social media accounts. </p>
+			 	  </div>
+				 
+			  <div class="tab-pane fade text-center" id="pills-social-error" role="tabpanel" aria-labelledby="pills-socialUnlink-tab">
+				  <img src="assets/img/icon-error.svg" height="50" width="50" class="pb-1">
+				  <h5>Sorry we can't find photos from your social media account. </h5>
+				  Is your account linked?
+			  </div>
+			  <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
+			  
+				 <div class="row gallery">
+
+					<div class="row no-gutters">
+
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/bridge.jpg" alt="Bridge">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/park.jpg" alt="Park">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/tunnel.jpg" alt="Tunnel">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/traffic.jpg" alt="Traffic">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/coast.jpg" alt="Coast">
+							</a>
+						</div> 
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/rails.jpg" alt="Rails">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/park.jpg" alt="Park">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/tunnel.jpg" alt="Tunnel">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/traffic.jpg" alt="Traffic">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/coast.jpg" alt="Coast">
+							</a>
+						</div> 
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/park.jpg" alt="Park">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/bridge.jpg" alt="Bridge">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/bridge.jpg" alt="Bridge">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/park.jpg" alt="Park">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/tunnel.jpg" alt="Tunnel">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/traffic.jpg" alt="Traffic">
+							</a>
+						</div>
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/coast.jpg" alt="Coast">
+							</a>
+						</div> 
+						<div class="col-6 col-md-2">
+							<a class="lightbox" href="#">
+								<img src="assets/img/gallery/rails.jpg" alt="Rails">
+							</a>
+						</div>
+
+					</div>
+				</div>	
+				  
+			  </div>
+			</div>
+	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+</html>

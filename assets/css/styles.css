@@ -399,3 +399,48 @@ h2 {
 	}
 }
 
+/** MODAL BOXES **/
+
+.modal-header, .modal-footer { border: 0 }
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link { background-color: var(--primary);}
+
+.nav-pills .btn-icon { 
+ filter: invert(89%) sepia(89%) saturate(1991%) hue-rotate(144deg) brightness(88%) contrast(96%);
+}
+.nav-pills .nav-link.active .btn-icon { 
+ filter: none;
+}
+
+
+.uploadDragDrop {
+	padding: 2em;
+	padding-top:5em;
+	border: dashed var(--cool-grey);
+}
+.uploadDragDrop:before {
+    content: " Drag and drop a file here or click ";
+    display: block;
+    text-align: center;
+	position:relative;
+	top:-1.5em;
+}
+
+.uploadDragDrop {
+    background-image: url(../../assets/img/icon-upload.svg);
+	background-repeat:no-repeat;
+	background-position: center 0.5em;
+	background-size:10%;
+}
+.custom-file-label::after {
+	background-color: var(--primary);
+	color:#fff;
+}
+#uploadResume .custom-file-label::after {
+	content:'';
+	background-image:url(../../assets/img/icon-upload-btn.svg);
+	background-size: 65%;
+	background-position: center;
+	background-repeat:no-repeat;
+	width:40px;
+}
