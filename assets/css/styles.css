@@ -444,3 +444,31 @@ h2 {
 	background-repeat:no-repeat;
 	width:40px;
 }
+
+
+div.user-editable-styling {
+	display:block;
+		margin:-1px;
+	    border: 1px solid var(--primary);
+}
+div.user-editable-styling::before {
+	background-color: var(--primary);
+	color:#fff;
+	content: ' edit ';
+	display:block;
+	position:absolute;
+	width:40px;
+	height:20px;
+	margin-top:-20px;
+	margin-left:-1px;
+	line-height:20px;
+	text-align:center;
+	
+}
+div.user-editable-styling:hover {
+	border-color: var(--green);
+	
+}
+div.user-editable-styling:hover::before {
+	background-color: var(--green)
+}

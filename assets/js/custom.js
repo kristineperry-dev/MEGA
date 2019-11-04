@@ -11,3 +11,15 @@ $(function () {
 $( ".navbar-toggler" ).click(function() {
   $( "header.template-1" ).addClass('bg-dark');
 });
+
+
+
+$('.user-editable-text').click(function(){
+	// fill the modal box text area content with current text 
+	var userContent = $(this).html();
+	$('#modalUserEdit').find('.user-editable-text-current').val(userContent);
+	// open the modal box
+	$('#modalUserEdit').modal('show');
+	
+});
+
